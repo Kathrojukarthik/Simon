@@ -1,0 +1,22 @@
+button:hover{
+    color: lightsalmon;
+    background-color: darkmagenta;
+
+
+}
+button:active{
+    color: blanchedalmond;
+    background-color: black;
+}
+input[type="radio"]:checked+label{
+    color: white;
+    
+}
+h1::first-letter{
+    color: rgb(55, 18, 18);
+}
+p::selection{
+    color: green;
+}
+
+

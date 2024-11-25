@@ -1,0 +1,63 @@
+.container{
+    height: 500px;
+    width: 900px;
+    display: grid;
+    border: 10px solid white;
+    grid-template-rows: repeat(12,2fr);
+    grid-template-columns: repeat(12,4fr);
+    gap: 10px 10px;
+    
+   
+}
+.header{
+    
+    grid-column-start: 1;
+    grid-column-end: 13;
+    background-color: pink;
+   
+}
+.side{
+    grid-row-start: 2;
+    grid-row-end: 11;
+    background-color: pink;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.nav{
+    background-color: pink;
+    grid-column: 4/10;
+
+}
+.ads{
+    grid-row: 2/11;
+    background-color: pink;
+    grid-column: 10/13;
+
+}
+.main{
+    background-color: pink;
+    grid-column: 4/10;
+    grid-row: 3/11;
+
+}
+.footer{
+    background-color: pink;
+    grid-column: 1/13;
+
+}
+#loader{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid goldenrod;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s forwards infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
